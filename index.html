@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <link rel="stylesheet" href="index.css">
         <title>Rajesh Dev & Tech Enthusiast</title>
     </head>
@@ -21,70 +22,63 @@
        
       
     </style>
-    <body class="bg-[#0F141C]">
+    <body class="bg-[#0F141C] h-screen">
 
         <!-- Cover -->
-
+        <header class="bg-[#0F141C]">
+            <nav class="flex justify-between items-center w-[92%] mx-auto">
+                <div>
+                    <img class="w-16" src="./rb.png" alt="...">
+                </div>
+                <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500" href="#me" id="about">About Me</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#skills" id="about">Skills</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#project" id="about">Projects</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#certi" id="about">Certifications</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#social" id="about">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </header>
         <div class="relative">
             <img class="w-[90rem] h-[50rem] mb-2" src="./cover.jpg" id="start">
-            <div class="flex flex-row space-x-8">
-                <div class="absolute top-7 left-[57%]">
-                    <a href ="#me"> 
-                        <button id="about">
-                            <p>About Me</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="absolute top-7 left-[63%]">
-                    <a href ="#skills">
-                        <button id="about">
-                            <p>Skills</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="absolute top-7 left-[68%]">
-                    <a href ="#project">
-                        <button id="about">
-                            <p>Projects</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="absolute top-7 left-[75%]">
-                    <a href ="#certi">
-                        <button id="about">
-                            <p>Certifications</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="absolute top-7 left-[85%]">
-                    <a href ="#social">
-                        <button id="about">
-                            <p>Contact Me</p>
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <h1 class="absolute top-[30%] left-[10%] text-[2.4rem] text-gray-200">Hi</h1>
-            <h1 class="absolute top-[30%] left-[13%] text-[2.4rem] text-red-600">I'm</h1>
+            <h1 class="absolute md:top-[30%] top-[28%] left-[10%] text-[2.4rem] text-gray-200">Hi</h1>
+            <h1 class="absolute md:top-[30%] top-[28%] md:left[15%] md:left-[13%] left-[20%] text-[2.4rem] text-red-600">I'm</h1>
             <h1 class="absolute top-[35%] left-[10%] text-[2.4rem] font-black text-gray-200">Rajesh Balasubramaniam</h1>
-            <h1 class="absolute top-[40%] left-[10%] text-[2.4rem] font-black text-gray-200"><span class="multiText">Coder</span></h1>
-            <a href ="https://drive.google.com/file/d/1m_OEDcea2ozea8uIVXC14KLjUHgIvqcX/view?usp=drivesdk">
-                <button class="absolute top-[50%] left-[10%]" id="cv">Download CV</button>
+            <h1 class="absolute md:top-[40%] top-[50%] left-[10%] text-[2.4rem] font-black text-gray-200"><span class="multiText">Coder</span></h1>
+            <a href ="https://drive.google.com/file/d/1Zz7u6I69GF4k3LqSyWS_fsriuurZg-2M/view?usp=drivesdk ">
+                <button class="absolute md:top-[50%] top-[60%] left-[10%]" id="cv">Download CV</button>
             </a>
         </div>
+        </div>
+        
 
         <!-- About -->
 
         <div class="relative mt-[2%]">
-            <img class=" w-[25%] h-[25%] ml-[17%] rounded-md" src="./rb.jpg">
-            <div class="absolute top-7 left-[50%]">
+            <img class="md:ml-[17%] md:w-[25%] h-[45%] w-[50%] h-[55%] ml-2 mt-10 rounded-md" src="./rb.jpg">
+            <div class="absolute md:top-7 top-0 left-[56%] md:left-[50%]">
                 <h1 class="text-[2.4rem] text-gray-200" id="me">About</h1>
-                <h1 class="absolute top-0 left-[16%] text-[2.4rem] text-red-600">Me</h1>
-                <p class="text-[1.5rem] text-gray-200">Dedicated and self-motivated Electronics and Communication 
+                <h1 class="md:flex md:justify-center absolute top-0 md:left-[16%] left-[58%] text-[2.4rem] text-red-600">Me</h1>
+                <p class="md:text-[1.5rem] md: text-[0.75rem] text-gray-200">Dedicated and self-motivated Electronics and Communication 
                    Engineering student with strong analytical skills. Experienced 
-                   <br>and gained knowledge in programming, developing, designing and 
+                   and gained knowledge in programming, developing, designing and 
                    testing codes. Quickly learning and adapting to new technologies.
-                   Efficient and honest in working on a team and<br>self-esteemed event.
+                   Efficient and honest in working on a team and self-esteemed event.
                 </p>
             </div>
         </div>
@@ -93,178 +87,295 @@
         <!--Skills  -->
 
         <div class="relative">
-            <h1 class="text-[2.4rem] mt-[3%] ml-[46%] text-gray-200" id="skills">My</h1>
-            <h1 class="absolute top-0 left-[50%] text-[2.4rem] text-red-600">Skills</h1>
+            <h1 class="text-[2.4rem] md:mt-[3%] mt-[8%] md:ml-[43%] ml-[36%] text-gray-200" id="skills">My</h1>
+            <h1 class="absolute top-0 md:left-[47%] left-[50%] text-[2.4rem] text-red-600">Skills</h1>
         </div>
-
-        <div>
-            <div class="relative">
-                <div class="flex flex-row space-x-8">
-                    <div class="absolute top-9 left-[10%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./py.png">
-                    </div>
-                    <div class="absolute top-9 left-[30%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./dj.jpg">
-                    </div>
-                    <div class="absolute top-9 left-[50%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./c.png">
-                    </div>
-                    <div class="absolute top-9 left-[70%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./html.png">
-                    </div>
+        <div class = "ml-[5%] w-11/12 md:w-[90%] ">
+            <div class="mt-8 pr-3 h-[20rem] overflow-y-scroll">
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">PROGRAMMING LANGAUGE</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-python" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                            <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                            <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                            <path d="M11 6l0 .01" />
+                            <path d="M13 18l0 .01" />
+                        </svg> Python
+                    </p>    
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">WEB TECHNOLOGIES</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-html5" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg> HTML5
+                    </p>  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-css3" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                    </svg> CSS3 
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">FRAMEWORK</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-django" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 3m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                            <path d="M12 7v8.5l-2.015 .201a2.715 2.715 0 1 1 0 -5.402l2.015 .201" />
+                            <path d="M16 7v.01" />
+                            <path d="M16 10v5.586c0 .905 -.36 1.774 -1 2.414" />
+                        </svg> Django
+                    </p>  
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">JAVASCRIPT LIBRARY</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-react" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
+                            <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
+                            <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
+                            <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
+                            <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
+                            <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
+                            <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
+                        </svg> ReactJS
+                    </p>  
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">SCRIPTING LANGAUGE</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-javascript" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M7.5 8h3v8l-2 -1" />
+                            <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                        </svg> JavaScript
+                    </p>  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-javascript" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M7.5 8h3v8l-2 -1" />
+                        <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                    </svg> AJAX
+                    <br><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-javascript" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M7.5 8h3v8l-2 -1" />
+                        <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                    </svg> JQUERY
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">CSS FRAMEWORK</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-tailwind" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+                        </svg> TailwindCSS
+                    </p>  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-bootstrap" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
+                        <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
+                        <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
+                    </svg> Bootstrap 
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">DATABASE</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-database" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                        </svg> POSTGRESQL
+                    </p>  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-database" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                        <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                        <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                    </svg> SQLITE
+                    <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-database" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                        <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                        <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                    </svg> SQL 
+                </div>
+                <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+                    <h3 class="project-title">OTHER</h3>
+                    <p class="project-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-git" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M12 15v-6" />
+                            <path d="M15 11l-2 -2" />
+                            <path d="M11 7l-1.9 -1.9" />
+                            <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+                        </svg> GIT
+                    </p>  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler inline icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg> GITHUB
                 </div>
             </div>
-            <div class="relative">
-                <div class="flex flex-row">
-                    <p class="ml-[12%] mt-[15%] text-[1.5rem] text-gray-200">Python</p>
-                    <div class="absolute top-[85%] left-[32.5%]">
-                        <p class="text-[1.5rem] text-gray-200">Python Django</p>
-                    </div>
-                    <div class="absolute top-[85%] left-[52%]">
-                        <p class="text-[1.5rem] text-gray-200">C Programming</p>
-                    </div>
-                    <div class="absolute top-[85%] left-[76%]">
-                        <p class="text-[1.5rem] text-gray-200">HTML</p>
-                    </div>
-                </div>
-            </div> 
         </div>
-
-        <div>
-            <div class="relative">
-                <div class="flex flex-row space-x-8">
-                    <div class="absolute top-9 left-[10%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./css.png">
-                    </div>
-                    <div class="absolute top-9 left-[30%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./js.png">
-                    </div>
-                    <div class="absolute top-9 left-[50%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./tail.png">
-                    </div>
-                    <div class="absolute top-9 left-[70%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./boot.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="flex flex-row">
-                    <p class="ml-[12%] mt-[15%] text-[1.5rem] text-gray-200">CSS</p>
-                    <div class="absolute top-[85%] left-[32.5%]">
-                        <p class="text-[1.5rem] text-gray-200">JavaScript</p>
-                    </div>
-                    <div class="absolute top-[85%] left-[52%]">
-                        <p class="text-[1.5rem] text-gray-200">TailwindCSS</p>
-                    </div>
-                    <div class="absolute top-[85%] left-[76%]">
-                        <p class="text-[1.5rem] text-gray-200">Bootstrap</p>
-                    </div>
-                </div>
-            </div> 
-        </div>
-
-        <div>
-            <div class="relative">
-                <div class="flex flex-row space-x-8">
-                    <div class="absolute top-9 left-[10%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./sql.jpg">
-                    </div>
-                    <div class="absolute top-9 left-[30%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./post.png">
-                    </div>
-                    <div class="absolute top-9 left-[50%]">
-                        <img class="w-[9rem] justify-center items-center rounded-full" src="./git.png">
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="flex flex-row">
-                    <p class="ml-[12%] mt-[15%] text-[1.5rem] text-gray-200">SQL</p>
-                    <div class="absolute top-[85%] left-[32.5%]">
-                        <p class="text-[1.5rem] text-gray-200">PostgreSQL</p>
-                    </div>
-                    <div class="absolute top-[85%] left-[52%]">
-                        <p class="text-[1.5rem] text-gray-200">Git</p>
-                    </div>
-                </div>
-            </div> 
-        </div>
+     
 
         <!-- Projects -->
-        <div class="flex flex-wrap md:flex-nowrap w-11/12 md:w-[120%] justify-center md:justify-between items-center m-auto mt-[8%]" id="projects">
-            <div class = "ml-[5%] w-11/12 md:w-[70%] ">
-                <div class="relative">
-                    <h1 class="text-[2.4rem] mt-[3%] ml-[46%] text-gray-200" id="project">My</h1>
-                    <h1 class="absolute top-0 left-[51%] text-[2.4rem] text-red-600">Projects</h1>
-                </div>
-                <div class="mt-8 pr-3 h-[20rem] overflow-y-scroll">
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Natural Disasters Intensity Analysis and
-                            Classification using Artificial Intelligence in
-                            IBM.</h3>
-                        <p class="project-description">Domain : IOT
-                            <br>Framework : Python Flask
-                            <br>Database : SQLite
-                        </p>    
+            <div class="relative">
+                <h1 class="text-[2.4rem] mt-[3%] md:ml-[43%] ml-[30%] text-gray-200" id="project">My</h1>
+                <h1 class="absolute top-0 md:left-[47%] left-[44%] text-[2.4rem] text-red-600">Projects</h1>
+            </div>
+            <div class="flex flex-row flex-wrap justify-evenly gap-4 text-sm "> 
+                <div class="card">
+                    <img class="" src="./mfj.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">Jewellery Shopping Web Application</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :- Django, PostgreSQL, Ajax, Jquery, JavaScript, HTML, CSS, TailwindCSS.
+                        </div>
+                        <a href="https://github.com/rb4807/jewelry-django.git">
+                            <button class="card__button">View</button>
+                        </a>
                     </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Petrol bunk automation using IOT.</h3>
-                        <p class="project-description">Domain : Embedded System with IOT
-                          <br> Programming Language : Python
-                        </p>
-                    </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">E-Commerce Web Application</h3>
-                        <p class="project-description">Framework : Python Django
-                          <br>Frontend : TailwindCSS, JavaScript
-                          <br>Backend : Python Django
-                          <br>Database : PostgreSQL
-                        </p>
-                    </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Jewellery Online Shopping Web Application.</h3>
-                        <p class="project-description">Framework : Python Django
-                          <br>Frontend : TailwindCSS, JavaScript
-                          <br>Backend : Python Django
-                          <br>Database : PostgreSQL
-                        </p>
-                    </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Rest API for CRUD operation with Simple-JWT authentication.</h3>
-                        <p class="project-description">Framework : Python Django
-                          <br>Backend : Python Django
-                          <br>Authentication : Simple-JWT
-                          <br>Database : PostgreSQL
-                        </p>
-                    </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Hotel Management Web Application.</h3>
-                        <p class="project-description">Framework : Python Django
-                            <br>Frontend : HTML, CSS, Bootstrap, JavaScript
-                            <br>Backend : Python Django
-                            <br>Database : SQLite
-                        </p>
-                    </div>
-                    <div class = "p-8 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
-                        <h3 class="project-title">Doctor Appointment Web Application</h3>
-                        <p class="project-description">Framework : Python Django
-                            <br>Frontend : TailwindCSS, JavaScript
-                            <br>Backend : Python Django
-                            <br>Database : PostgreSQL
-                        </p>
-                    </div>
-                </div>
-            </div>  
-        </div>
+                </div> 
 
-         
+                <div class="card">
+                    <img class="" src="./rest.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">Cloud Storage Web Application.</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :-  Django, PostgreSQL, REST API, Simple-JWT, CRUD, Postman for API.
+                        </div>
+                        <a href="https://github.com/rb4807/Storage-Platform.git">
+                            <button class="card__button">View</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="" src="./teammed.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">Doctor's Booking Web Application.</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :- Django, PostgreSQL, Ajax, Jquery, JavaScript, HTML, CSS, TailwindCSS.
+                        </div>
+                        <a href="https://github.com/rb4807/teammed-django.git">
+                            <button class="card__button">View</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="" src="./hotel.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">Hotel Management Web Application</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :- Django, SQLite, JavaScript, HTML, CSS, TailwindCSS.
+                        </div>
+                        <a href="https://github.com/rb4807/hotel-management-django.git">
+                            <button class="card__button">View</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="" src="./ecommerce.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">E-Commerce Web Application</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :- Django, PostgreSQL, Ajax, Jquery, JavaScript, HTML, CSS, TailwindCSS.
+                        </div>
+                        <a href="https://github.com/rb4807/e-commerce.git">
+                            <button class="card__button">View</button>
+                        </a>    
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="" src="./shl.png" id="start">
+                    <div class="card__content">
+                        <p class="card__title">School Managementweb Application</p>
+                        <div class="dis">
+                            <p class="card__tit">Responsibility</p>
+                            <p class="card__description">:- End to end development.
+                        </div>
+                        <div class="disp">
+                            <p class="card__tit">Technologies
+                            <p class="card__description"> :- Django, PostgreSQL, Ajax, Jquery, JavaScript, HTML, CSS, Bootstrap.
+                        </div>
+                        <a href="https://github.com/rb4807/School-Django.git">
+                            <button class="card__button">View</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                  
+            
         <!-- Certification -->
-
          <div class="relative">
-            <h1 class="text-[2.4rem] mt-[3%] ml-[46%] text-gray-200" id="certi">My</h1>
-            <h1 class="absolute top-0 left-[50%] text-[2.4rem] text-red-600">Certifications</h1>
+            <h1 class="text-[2.4rem] mt-[3%] md:ml-[40%] ml-[18%] text-gray-200" id="certi">My</h1>
+            <h1 class="absolute top-0 md:left-[44%] left-[33%] text-[2.4rem] text-red-600">Certifications</h1>
         </div>
 
+        <main class="container mx-auto py-10 grid md:grid-cols-2 gap-8">
+            <section class="bg-white/[.02] hover:bg-white/[0.05] p-6 rounded shadow-md">
+                <h2 class="achive">Internship</h2>
+                <p> • Internet Of Things in Novitech.</p>
+            </section>
+            <section class="bg-white/[.02] hover:bg-white/[0.05] p-6 rounded shadow-md">
+                <h2 class="achive">Certification</h2>
+                <p> • Power Programmer Virtual Experience Program from Infosys.</p>
+                <p> • Python Backend And Django Framework Complete Course.</p>
+                <p> • CSS, Bootstrap, JavaScript, Web Development Course.</p>
+                <p> • React.JS: Front-end The Complete Course for Beginners.</p>
+                <p> • Agile Development Methodology Agile Manifesto SCRUM KANBAN from UDEMY.</p>
+                <p> • Data Science Tools from IBM.</p>
+
+            </section>
+          </main>
+          <!-- Education -->
+         <div class="relative">
+            <h1 class="text-[2.4rem] mt-[3%] md:ml-[40%] ml-[18%] text-gray-200" id="edu">My</h1>
+            <h1 class="absolute top-0 md:left-[44%] left-[33%] text-[2.4rem] text-red-600">Education</h1>
+        </div>
         <div class="container1">
             <div class="top-section"></div>
             <div class="timeline">
@@ -272,37 +383,33 @@
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
-                        <h2 class="achive">Internship</h2>
-                        <p> •Embedded System in LAMS Automation.<br>
-                            •Internet Of Things in Novitech.<br>
+                        <h1 class="achive">BE.Electronics And Communication Engineering</h1>
+                        <h3 class="font-bold"> Nehru Institute Of Engineering And Technology</h3>
+                        <p> • 2019 - 2023<br>
+                            • ANNA UNIVERSITY<br>
+                            • CGPA : 7.9<br>
                         </p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
-                        <h2 class="achive">Certification</h2>
-                        <p> •Data Visualization:Empowering Business with Effective Insight from TCS.<br>
-                            •Python And Django Framework Complete Course.<br>
-                            •CSS, Bootstrap,JavaScript, Web Development Course.<br>
-                            •React.JS: The Complete Course for Beginners.<br>
-                            •Agile Development Methodology Agile Manifesto SCRUM KANBAN from UDEMY.<br>
+                        <h1 class="achive">Senior Secondary Education</h1>
+                        <h3 class="font-bold">Karnakiyamman Higher Secondary School</h3>
+                        <p> • 2017 - 2019<br>
+                            • STATE BOARD ( BIOLOGY SCIENCE )<br>
+                            • CGPA : 6.6<br>
                         </p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
-                        <h2 class="achive">Certification Of Industrial Visit</h2>
-                        <p>•Data science,Artificial intelligence and Machine learning Unit from ZEPHYR.</p>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="bead"></div>
-                    <div class="content">
-                        <h2 class="achive">Workshop</h2>
-                        <p> •Application of Embedded technologies using Arduino from Study Word College of Engineering.<br>
-                            •DESIGN A LOW COST CANSAT SATELLITE from Nehru Institute of Engineering and  Technology.
+                        <h1 class="achive">Secondary Education</h1>
+                        <h3 class="font-bold">St.Raphaels Cathedral School</h3>
+                        <p> • 2016 - 2017<br>
+                            • CBSE<br>
+                            • CGPA : 7.2<br>
                         </p>
                     </div>
                 </div>
@@ -312,11 +419,11 @@
          <!-- Contact me -->
 
         <div class="relative">
-            <h1 class="text-[2.4rem] ml-[46%] text-gray-200" id="social">Contact</h1>
+            <h1 class="text-[2.4rem] md:ml-[46%] ml-[23%] text-gray-200" id="social">Contact</h1>
             <h1 class="absolute top-0 left-[56%] text-[2.4rem] text-red-600">Me</h1>
        
 
-            <div class="flex flex-row mt-[3%] bg-white rounded-full w-[60%] p-2 justify-center space-x-8 items-center m-auto mb-[2%] ">
+            <div class="flex flex-row mt-[3%] bg-white rounded-full md:w-[60%] w-[90%] p-2 justify-center md:space-x-8 space-x-2 items-center m-auto mb-[2%] ">
                 <div class = "rounded-full p-3 hover:bg-gray-600">
                     <a href ="https://github.com/rb4807" target="blank">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -369,7 +476,7 @@
                     </a>
                 </div>
             </div>
-            <div class="absolute top-9 left-[85%]">
+            <div class="absolute md:top-9 top-15 md:left-[85%] left-[60%]">
                 <a href="#start">
                     <button class="top">
                         <div class="text">
@@ -388,18 +495,24 @@
                     </button> 
                 </a>
             </div>
-        </div>    
+        </div>
+        <script src="timeline.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typingEffect = new Typed( ".multiText",{
+            strings : ["coder", "web developer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 100,
+            backDelay : 500
+            })
+        </script>
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script> 
     </body>
 </html> 
-
-<script src="timeline.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typingEffect = new Typed( ".multiText",{
-    strings : ["coder", "web developer"],
-    loop : true,
-    typeSpeed : 100,
-    backSpeed : 100,
-    backDelay : 500
-    })
-</script>
